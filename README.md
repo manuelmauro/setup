@@ -25,5 +25,5 @@ in order to manage their symlinks.
 
 # Credits
 This simple repo is based on the work of [Balaji S. Srinivasan
-(balajis@stanford.edu)]{https://github.com/startup-class/setup}
+(balajis@stanford.edu)](https://github.com/startup-class/setup)
 for the Coursera mooc in startup engineering.
