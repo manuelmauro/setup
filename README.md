@@ -18,9 +18,9 @@ Furthermore  this repo contains dotfiles for:
 * gitmessage
 * screen
 
-I suggest to use [GNU Stow]{https://www.gnu.org/software/stow/} as described
+I suggest to use [GNU Stow](https://www.gnu.org/software/stow/) as described
 in this
-[article]{http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html}
+[article](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
 in order to manage their symlinks.
 
 # Credits
