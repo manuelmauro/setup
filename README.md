@@ -1,4 +1,4 @@
-# setup.sh - Headless setup for Ubuntu development environment
+# setup.sh - Brainless setup for Ubuntu development environment
 This repository contains the script `setup.sh` which installs the following:
 
 * build-essentials
