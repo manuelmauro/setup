@@ -36,6 +36,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'moll/vim-node'
 "snippets
 Plugin 'jamescarr/snipmate-nodejs'
+"A better JSON for Vim
+Plugin 'elzr/vim-json'
 
 "Haskell plugins
 "Vim plugin for Haskell development
