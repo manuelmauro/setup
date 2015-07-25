@@ -74,6 +74,7 @@ let g:html_indent_inctags = "html,body,head,tbody"
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType xml setlocal shiftwidth=2 tabstop=2
 
+
 "Git commit guidelines 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
@@ -102,9 +103,9 @@ set incsearch
 "Highlight search
 set hls
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set textwidth=80
 
 "Always uses spaces instead of tabs
