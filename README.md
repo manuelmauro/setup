@@ -16,7 +16,6 @@ Furthermore  this repo contains dotfiles for:
 * bash
 * vim
 * gitmessage
-* screen
 
 I suggest to use [GNU Stow](https://www.gnu.org/software/stow/) as described
 in this
