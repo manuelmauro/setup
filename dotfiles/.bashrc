@@ -40,9 +40,9 @@
 
 
 
-# -----------------------------------
-# -- 1.1) Set up umask permissions --
-# -----------------------------------
+# ------------------------------
+# -- Set up umask permissions --
+# ------------------------------
 #  The following incantation allows easy group modification of files.
 #  See here: http://en.wikipedia.org/wiki/Umask
 #
@@ -74,9 +74,9 @@ else
 	umask 022
 fi
 
-# ---------------------------------------------------------
-# -- 1.2) Set up bash prompt and ~/.bash_eternal_history --
-# ---------------------------------------------------------
+# ----------------------------------------------------
+# -- Set up bash prompt and ~/.bash_eternal_history --
+# ----------------------------------------------------
 #  Set various bash parameters based on whether the shell is 'interactive'
 #  or not.  An interactive shell is one you type commands into, a
 #  non-interactive one is the bash environment used in scripts.
@@ -164,17 +164,17 @@ shopt -s histappend
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
 PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
 
-## -----------------------
-## -- 2) Set up aliases --
-## -----------------------
+## --------------------
+## -- Set up aliases --
+## --------------------
 
-# 2.1) Safety
+# Safety
 alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
 set -o noclobber
 
-# 2.2) Listing, directories, and motion
+# Listing, directories, and motion
 alias ll="ls -alrtF --color"
 alias la="ls -A"
 alias l="ls -CF"
@@ -189,25 +189,25 @@ alias du='du -ch --max-depth=1'
 alias treeacl='tree -A -C -L 2'
 alias extip='curl http://ipecho.net/plain; echo'
 
-# 2.3) Development 
+# Development 
 alias vim='vim +NERDTree'
 alias glog='git log --graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)"'
 
-# 2.4) grep options
+# grep options
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;31' # green for matches
 
-# 2.5) sort options
+# sort options
 # Ensures cross-platform sorting behavior of GNU sort.
 # http://www.gnu.org/software/coreutils/faq/coreutils-faq.html#Sort-does-not-sort-in-normal-order_0021
 unset LANG
 export LC_ALL=POSIX
 
-# 2.6) Install rlwrap if not present
+# Install rlwrap if not present
 # http://stackoverflow.com/a/677212
 command -v rlwrap >/dev/null 2>&1 || { echo >&2 "Install rlwrap to use node: sudo apt-get install -y rlwrap";}
 
-# 2.7) node.js and nvm
+# node.js and nvm
 # http://nodejs.org/api/repl.html#repl_repl
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 alias node_repl="node -e \"require('repl').start({ignoreUndefined: true})\""
@@ -229,9 +229,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-## ------------------------------
-## -- 3) User-customized code  --
-## ------------------------------
+## ---------------------------
+## -- User-customized code  --
+## ---------------------------
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
