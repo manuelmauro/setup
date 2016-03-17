@@ -10,8 +10,6 @@ fi
 #  - Lowest priority first, highest priority last.
 export PATH=$PATH
 export PATH=$HOME/bin:$PATH
-export PATH=$HOME/android-sdk-linux/platform-tools:$PATH
-export PATH=$HOME/android-sdk-linux/tools:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
